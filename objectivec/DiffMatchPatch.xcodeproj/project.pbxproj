@@ -722,6 +722,88 @@
 			};
 			name = Release;
 		};
+		5FF04C691B15EF9200B93E33 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D510E1012BEBA44008C7CE7 /* Base.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Testing;
+		};
+		5FF04C6A1B15EF9200B93E33 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DiffMatchPatch_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = DiffMatchPatch;
+				SDKROOT = macosx10.10;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Testing;
+		};
+		5FF04C6B1B15EF9200B93E33 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests/DiffMatchPatchTest-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = DiffMatchPatchTest;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Testing;
+		};
+		5FF04C6C1B15EF9200B93E33 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = speedtest_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = speedtest;
+			};
+			name = Testing;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -729,6 +811,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Debug */,
+				5FF04C6A1B15EF9200B93E33 /* Testing */,
 				3D105A0D12DA601C002111E1 /* Debug 10.6 */,
 				1DEB91AF08733DA50010E9CD /* Release */,
 				3D105A1112DA6024002111E1 /* Release 10.6 */,
@@ -740,6 +823,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
+				5FF04C691B15EF9200B93E33 /* Testing */,
 				3D105A0C12DA601C002111E1 /* Debug 10.6 */,
 				1DEB91B308733DA50010E9CD /* Release */,
 				3D105A1012DA6024002111E1 /* Release 10.6 */,
@@ -751,6 +835,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D5BC0B1128CA8E500B8F5FF /* Debug */,
+				5FF04C6B1B15EF9200B93E33 /* Testing */,
 				3D105A0E12DA601C002111E1 /* Debug 10.6 */,
 				3D5BC0B2128CA8E500B8F5FF /* Release */,
 				3D105A1212DA6024002111E1 /* Release 10.6 */,
@@ -762,6 +847,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D96F3A412AFC68B00C3E5C0 /* Debug */,
+				5FF04C6C1B15EF9200B93E33 /* Testing */,
 				3D105A0F12DA601C002111E1 /* Debug 10.6 */,
 				3D96F3A512AFC68B00C3E5C0 /* Release */,
 				3D105A1312DA6024002111E1 /* Release 10.6 */,
